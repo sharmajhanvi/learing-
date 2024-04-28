@@ -1,0 +1,32 @@
+import java.util.*;
+public class Main
+{
+    public static void main(String arg[]){
+        Test t1=new Test();
+        List<String>l1=new ArrayList<>();
+        l1.add("Test");//s
+        l1.add("Demo");//m
+        l1.add("Main");//i
+        l1.add("Class");//s
+        Collections.sort(l1,t1);
+        System.out.print(l1);
+       
+	}
+}
+class Test implements Comparator<String>{
+    public int compare(String s1,String s2){
+        char ch=s1.charAt(s1.length()-2);
+        char ch1=s2.charAt(s2.length()-2);
+        if(ch>ch1){
+            return 1;
+        }
+        else if(ch<ch1){
+            return -1;
+            
+        }
+        else{
+            return 1;
+        }
+    }
+    
+}
