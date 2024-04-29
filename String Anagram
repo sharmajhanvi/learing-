@@ -1,0 +1,22 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	String s="Janvi";
+	String s1="sweta";
+	s=s.toLowerCase();
+	s1=s1.toLowerCase();
+	char c[]=s.toCharArray();
+	char c1[]=s1.toCharArray();
+	Arrays.sort(c);
+	Arrays.sort(c1);
+	boolean res=Arrays.equals(c,c1);
+	if(res==true){
+	    System.out.print("Anagram");
+	}
+	else{
+	    System.out.print("not an anagram");
+	}
+	
+	}
+}
