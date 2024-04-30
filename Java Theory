@@ -11,3 +11,21 @@ Object
 -object occupy the memory.
 -any entity showing it own state and behaviour
 
+Static 
+=======
+static member is decleared by using stsic keyword.
+static member is associated with the class.
+static memeber exist only one copy of class.
+Static memeber class store in a class area.
+
+Non-Static
+============
+non static memeber is decleared without using static keyword.
+non static is associated with the object
+non static memeber exist more than one copy of per calss
+non static memeber class stored in heap area
+
+
+
+
+
