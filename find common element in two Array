@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		int [] arr1={2,3,8,5,1,4,2,5,8,4};
+		int [] arr2={9,4,2,1,5,6,4,2,5,8,4};
+		Arrays.sort(arr1);
+		Arrays.sort(arr2);
+		int l=0;
+		int r=0;
+		while(l<arr1.length || r<arr2.length){
+		    if(arr1[l]==arr2[r]){
+		        System.out.println(arr1[l]);
+		       l++;
+		       r++;
+		    }
+		    l++;
+		    r++;
+		}
+	}
+}
