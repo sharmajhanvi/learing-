@@ -1,0 +1,13 @@
+Claas
+========
+-class is a blue print.
+-it is logical entity.
+-it caontains state and behaviour of the object.
+-it does not occopy the memory 
+
+Object
+=========
+-object is a real time entity
+-object occupy the memory.
+-any entity showing it own state and behaviour
+
