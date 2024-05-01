@@ -1,0 +1,36 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	List<Integer>l1=new ArrayList<>();
+	l1.add(1);
+	l1.add(2);
+	l1.add(3);
+	l1.add(4);
+	l1.add(5);
+	List<Integer>l2=new ArrayList<>();
+	l2.add(6);
+	l2.add(7);
+	l2.add(8);
+	l2.add(9);
+	l2.add(10);
+	List<Integer>l3=new ArrayList<>();
+	l3.add(11);
+	l3.add(12);
+	l3.add(13);
+	l3.add(14);
+	l3.add(15);
+	List<List<Integer>>li=new ArrayList<>();
+	li.add(l1);
+	li.add(l2);
+	li.add(l3);
+	for(int i=0;i<li.size();i++){
+	    List<Integer>x=li.get(i);
+	}
+	    for(int j=0;j<x.size();j++){
+	   System.out.print(x.get(j));
+	    }
+	
+	System.out.println();
+	}
+}
