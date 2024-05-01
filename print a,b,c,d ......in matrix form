@@ -1,0 +1,48 @@
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		List<Character>l1=new ArrayList<>();
+		l1.add('A');
+		l1.add('B');
+		l1.add('C');
+		l1.add('D');
+		l1.add('E');
+		l1.add('F');
+		l1.add('G');
+		l1.add('H');
+		l1.add('I');
+		l1.add('J');
+		List<Character>l2=new ArrayList<>();
+		l2.add('K');
+		l2.add('L');
+		l2.add('M');
+		l2.add('N');
+		l2.add('O');
+		l2.add('P');
+		l2.add('Q');
+		l2.add('R');
+		l2.add('S');
+		l2.add('T');
+		List<Character>l3=new ArrayList<>();
+		l3.add('U');
+		l3.add('V');
+		l3.add('W');
+		l3.add('X');
+		l3.add('Y');
+		l3.add('Z');
+		List<List<Character>>l4=new ArrayList<>();
+		l4.add(l1);
+		l4.add(l2);
+		l4.add(l3);
+		for(int i=0;i<l4.size();i++){
+		    List<Character>x=l4.get(i);
+		    for(int j=0;j<x.size();j++){
+		        System.out.print(x.get(j)+" ");
+		    }
+		    System.out.println( );
+		}
+		
+	}
+}
