@@ -1,0 +1,37 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	Map<String,Integer>m1=new HashMap<>();
+	m1.put("janvi",3);
+	m1.put("kumari",5);
+	m1.put("sharma",1);
+	m1.put("lal",9);
+	Map<String,Integer>m2=new HashMap<>();
+	m2.put("janv",2);
+	m2.put("kumar",11);
+	m2.put("sharm",10);
+	m2.put("lala",34);
+	Map<String,Integer>m3=new HashMap<>();
+	m3.put("jan",30);
+	m3.put("kum",50);
+	m3.put("shar",14);
+	m3.put("la",90);
+	
+	List<Map<String,Integer>> l1=new ArrayList<>();
+	l1.add(m1);
+	l1.add(m2);
+	l1.add(m3);
+	for(int i=0;i<l1.size();i++){
+	    Map<String,Integer>x=l1.get(i);
+	    for(Map.Entry<String,Integer>it:x.entrySet()){
+	        String s=it.getKey();
+	        int s2=it.getValue();
+	        if(s2%2==0){
+	            System.out.println(s+"  "+s2);
+	        }
+	    }
+	    }
+	}
+}
