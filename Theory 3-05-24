@@ -16,7 +16,7 @@ Encapsulation
 Binding the Data and its operation of an entity is known as encapsulation.
 jar file is encapsulation of packages,packages is encapsulation of classes ,class is encapsulation of method and variable.
 best eg of encapsulation of is java bean class
-java bean class is use getter and setter ,class must be public ,
+java bean class :class must be public ,member variable must be private ,public constractor,getter and setter must be public 
 
 Constractor Overloading
 =========================
