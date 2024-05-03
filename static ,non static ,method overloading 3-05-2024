@@ -1,0 +1,32 @@
+Static 
+=========
+static decleared by using static keyword,
+Static variable and method both are save  in class area.
+Static occopy less memory becacuse static method or variable exist per one copy.
+static is associated with a class.
+
+Non Static 
+============
+non sataic decleared by using without static
+non static method or variable both are present in heap area
+non static occopy more memory because non static method or variable present in every object 
+non static is associated with the class o of object.
+
+Method Overloading
+====================
+Defining multiple method with same name but different parameter
+eg.  public class Abc{
+       void xy(int n,int n2){    //if here i am using static means it has only one copy,satic nhi use  kiey hai matlab ye sare object mai present hoga 
+       System.out.println(n1+n2);
+      }
+       void xy(int n,int n2,int n3){
+       System.out.println(n1+n2+n3);
+      }
+       void xy(int n,double n2){
+       System.out.println(n1+n2);
+      }
+public static void main(String [] args){
+Abc x=new Abc(3,5);
+Abc x=new Abc();
+Abc x=new Abc();
+x.xy;
