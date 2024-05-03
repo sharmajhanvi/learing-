@@ -1,0 +1,23 @@
+Tell me obout yourself
+========================
+good evening .I am Janhanvi Sharma.I am Btech graduated specify in CSE from DIATM College of Enginnering Durgapur.
+Currently I am pursuing java full stack course in jspider.
+basically i am from bihar curretly i am staying in banglore itself.
+so i have basic knownlege of html,CSS,as well as SQL. and i have good knowledge of core java,little bit confident about jdbc.
+In my college i did one project  that project name is Student Record System this can be used any School any college to store the information of student.
+Technology was used in this project java,notepaid,Mysql8.0.11.
+operating System was used in this project is Window 8.
+while coming to my family there are 6 member in my family including me.my father is a teacher and my mother is home maker
+i have 2 sister and 1 brother that's all about me THANKU...
+
+
+Encapsulation
+===============
+Binding the Data and its operation of an entity is known as encapsulation.
+jar file is encapsulation of packages,packages is encapsulation of classes ,class is encapsulation of method and variable.
+best eg of encapsulation of is java bean class
+java bean class is use getter and setter ,class must be public ,
+
+Constractor Overloading
+=========================
+defining multiple constructor with same name but different  parameter.
