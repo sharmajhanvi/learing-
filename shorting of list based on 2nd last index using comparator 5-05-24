@@ -1,0 +1,30 @@
+import java.util.*;
+public class Main 
+    {
+        public static void main(String[] args) {
+	  List<String>l1=new ArrayList<>();
+	  l1.add("mno");//
+	  l1.add("def");
+	  l1.add("jkl");
+	  l1.add("ghi");
+	  l1.add("abc");
+	  Test a=new Test();
+	  Collections.sort(l1,a);
+	  System.out.print(l1);
+	}
+}
+ class Test implements Comparator<String>{
+    public int compare(String s1,String s2){
+        char c=s1.charAt(s1.length()-2);
+        char c1=s2.charAt(s2.length()-2);
+        if(c>c1){
+            return 1;
+        }
+        else if(c<c1){
+            return -1;
+        }
+        else{
+            return 0;
+        }
+    }
+}
