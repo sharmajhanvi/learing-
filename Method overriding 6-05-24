@@ -1,0 +1,32 @@
+Method Overloading 
+=======================
+Acquiring the super class property  and  changing its implementation is known as Method overlading.It must be Is a Relationship between classes .and
+return type must be same ,argument must be same,method should be same as well,access specifer must be same or higher visiblity
+
+example to understan method overriding
+=======================================
+public class Main
+{
+	public static void main(String[] args) {
+	Test t=new Test();
+	t.abc();
+	t.def();
+	}
+}
+class Demo{
+    void abc(){
+        int x=3;
+        int y=4;
+        System.out.println(x+" "+y);
+    }
+}
+class Test extends Demo{
+    void abc(){
+        int x=3;
+        int y=5;
+      System.out.println(x+" "+y);
+    }
+    void def(){
+        System.out.println("Happy");
+    }
+}
