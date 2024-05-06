@@ -1,0 +1,58 @@
+Encapsulation 
+=================
+Binding the data and its operation of an entity is known as Encapsulation.jar file is an encapsulation of packages,package is an encapsulation of classes ,
+classes in an encapsulation of data and method.
+
+Real time example of encapsulation is Java Bean Class
+-------------------------------------------------------
+1.Class must be public 
+2.member must be private
+3.public contructor
+4.public getter & setter
+
+example to undersatand Encapsulation
+=====================================
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Student s=new Student();
+	    s.setName("janvi");
+	    s.setId(2);
+	    s.setAddress("btm jsider");
+	    System.out.println(s.getName());
+	    System.out.println(s.getId());
+	    System.out.print(s.getAddress());
+	}
+}
+ class Student{
+    private String name;
+    private int id;
+    private String address;
+    public Student(){
+        
+    }
+    public Student(String name,int id,String address){
+        this.name=name;
+        this.id=id;
+        this.address=address;
+    }
+    public String getName(){
+        return name;
+    }
+    public void  setName(String name){
+        this.name=name;
+    }
+    public int  getId(){
+        return id;
+    }
+    public void setId(int id){
+        this.id=id;
+    }
+    public String getAddress(){
+        return address;
+    }
+    public void setAddress(String address){
+        this.address=address;
+    }
+}
