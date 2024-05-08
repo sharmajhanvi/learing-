@@ -1,0 +1,62 @@
+OOP
+====
+-Object Oriented Programming Structure .
+-oop  is a programming methodlogy.
+
+6 main concept of oop
+----------------------
+1.Class
+2.Object &Method
+3.Inheritance
+4.Polymorphism
+5.abstraction.
+6.Encapsulation.
+
+Class
+-------
+-class is a collection of object
+-class is a blue-print 
+-class is logical entity.
+-class does not occopy memory
+
+Object
+-------
+-object is occopy memory
+-object is real world entity.
+-Any entity having its own state and behaviour is known as object.
+
+Inheritance 
+------------
+-A class Acquring super class properties of other  class is known as inheritance 
+-There are 4 type of Iheritance.
+--------------------------------
+1.single Inheritance
+2.Multi level Inheritance
+3.Multiple Inheritance
+4.Hybride Inheritance
+5.Hierachy Inheritance
+
+Polymorphism
+-------------
+-An object showing different behviour at a different stage of its life cycle i known as polymorphism
+there are two type to polymorphism
+------------------------------------
+Compiletime polymorphism .->compiletime polymorphism are achive method overloading and eg of print ,sort
+Runtime polymorphism.->Runtime polymorphism are achieve method overloading 
+
+Abstraction
+------------
+hiding the internal implimentation details from another program is known as Abstraction.
+
+
+Encapsulation 
+--------------
+Binding the data and its operation of an entity is known as encapsulation.
+jar file  is a encapsulation of packages
+package is a encapsulation of classes 
+class is a encapsuation of data and method
+
+
+
+
+
