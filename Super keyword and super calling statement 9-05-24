@@ -1,0 +1,55 @@
+Super keyword
+===============
+-it is used call super class method.
+
+
+example to undestand super keyword
+----------------------------------
+class father{
+    public void fatherbloodgroup(){  //this is method 
+        System.out.println("B positive");
+    }
+}
+class Son extends father{
+     public void fatherbloodgroup(){ //this is method 
+         super.fatherbloodgroup();
+        System.out.println("o positive");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		Son s=new Son();
+		s.fatherbloodgroup();
+	}
+}
+
+
+Super Method /super calling statement ,super()
+================================================
+-super () is used to calling super class contructor proprty.
+
+example to understand super()
+-----------------------------
+class father{
+    public  father(){ //this is contructor 
+        System.out.println("B positive");
+    }
+}
+class Son extends father{
+     public  Son(){ //this is contructor
+         super();
+        System.out.println("o positive");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) {
+		Son s=new Son();
+	
+	}
+}
+
+
+
+
