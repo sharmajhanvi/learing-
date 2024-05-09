@@ -21,3 +21,28 @@ public class Main
 	    System.out.println(ispalindrome(s1));
 	}
 }
+Integer palindrome
+===================
+
+public class Main
+{
+	public static void main(String[] args) {
+	    int n=804409;
+	    int n1=n;
+	    int rem=0;
+	    int sum=0;
+	    for(int i=1;i<=n;i++){
+	        rem=n%10;
+	        sum=(sum*10)+rem;
+	        n=n/10;
+	    }
+	    if(n1==sum){
+	        System.out.println("Palindrome");
+	    }
+	    else{
+	        System.out.println("Not an Plaindrome");
+	    }
+	    
+	}
+}
+
