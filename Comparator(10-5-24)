@@ -1,0 +1,49 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Student s1=new Student(2,"janvi",85);
+	    Student s2=new Student(8,"neha",55);
+	    Student s3=new Student(4,"khusboo",82);
+	    Student s4=new Student(10,"nisha",12);
+	    Student s5=new Student(9,"bulbul",99);
+	    List<Student>l1=new ArrayList();
+	    l1.add(s1);	    
+	    l1.add(s2);
+	    l1.add(s3);
+	    l1.add(s4);
+	    l1.add(s5);
+	    BasedOnMarks bom=new BasedOnMarks();
+	    Collections.sort(l1,bom);
+	    for(int i=0;i<l1.size();i++){
+	        System.out.println(l1.get(i));
+	    }
+
+	}
+}
+class Student{
+    int id;
+    String name;
+    double marks;
+    Student(int id,String name,double marks){
+        this.id=id;
+        this.name=name;
+        this.marks=marks;
+    }
+    public String toString(){
+        return "Student{"+id+name+marks+"}";
+    }
+}
+class BasedOnMarks implements Comparator<Student>{
+    public int compare(Student o1,Student o2){
+        if(o1.marks>o2.marks){
+            return 1;
+        }
+        else if(o1.marks<o2.marks){
+            return -1;
+        }
+        else{
+            return 0;
+        }
+    }
+}
