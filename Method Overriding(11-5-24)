@@ -1,0 +1,34 @@
+Method Overriding 
+===================
+-Accquring the super class property and changing  its implementation is known as method overriding
+Rule of method overriding
+----------------------------
+1. same name but different class 
+2.return type same
+3.parameter must be same 
+4.Access specifer must be same or higher visiblity
+5.Is a relationship is must
+
+Example to unterstand method overriding
+----------------------------------------
+public class Main
+{
+	public static void main(String[] args) {
+	     Dog d=new Dog();
+	     d.cat();
+	     d.camel();
+	}
+}
+class Animal{
+   void cat(){
+        System.out.println("meow...meow");
+    }
+}
+class Dog extends Animal{
+   void cat(){
+    System.out.println("eat");
+    }
+   void  camel(){
+        System.out.println("bow bow");
+    }
+}
