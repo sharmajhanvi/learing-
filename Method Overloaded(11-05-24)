@@ -1,0 +1,37 @@
+Method Overloaded
+==================
+-Defining multiple method with same name but different parameter is known as method overloaded
+
+
+Example program to understand method overloaded
+-------------------------------------------------
+public class Main
+{
+    void mul(int n1){
+        System.out.println(n1);
+    }
+    void mul(int n1,int n2){
+        System.out.println(n1*n2);
+    }
+    void mul(int n1,double n2){
+        System.out.println(n1*n2);
+    }
+    void add(int n1,int n2){
+        System.out.println(n1+n2);
+    }
+     void add(int n1,float n2){
+        System.out.println(n1+n2);
+    }
+     void sub(int n1,int n2){
+        System.out.println(n1-n2);
+    }
+    
+    
+	public static void main(String[] args) {
+	   Main m=new Main();
+	   m.mul(4,8);//overloaded method
+	   m.mul(2,6.0);//overloaded method
+	   m.add(6,8);//overloaded method
+	   m.sub(8,2);//non overloaded method
+	}
+}
