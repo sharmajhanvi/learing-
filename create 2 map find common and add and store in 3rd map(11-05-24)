@@ -1,0 +1,31 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Map<Character,Integer> m1=new HashMap<>();
+	    m1.put('A',6);
+	    m1.put('B',4);
+	    m1.put('C',6);
+	    m1.put('D',4);
+	    m1.put('F',6);
+	    m1.put('G',4);
+	    Map<Character,Integer> m2=new HashMap<>();
+	    m2.put('N',6);
+	    m2.put('B',4);
+	    m2.put('H',6);
+	    m2.put('D',4);
+	    m2.put('M',6);
+	    m2.put('Y',4);
+	    Map<Character,Integer>m3=new HashMap<>();
+	    for(Map.Entry<Character,Integer>it:m1.entrySet()){
+	        char c=it.getKey();
+	        if(m2.containsKey(c)){
+	            int x=m2.get(c);
+	            int y=m1.get(c);
+	            int sum=x+y;
+	            m3.put(c,sum);
+	        }
+	    }
+	    System.out.println(m3);
+	}
+}
