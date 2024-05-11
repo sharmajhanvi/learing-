@@ -1,6 +1,10 @@
 Method Overloaded
 ==================
 -Defining multiple method with same name but different parameter is known as method overloaded
+Rules of method overloading
+-----------------------------
+1.same class and multiple method
+2.parameter must be differrent 
 
 
 Example program to understand method overloaded
