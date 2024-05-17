@@ -1,0 +1,54 @@
+DataBase
+==========
+Database is collection of Data in formate that can be eaisly accessed.
+
+DBMS
+=====
+DBMS stands for database management system
+it is an application(software application)
+it is used to manage  our data .
+ we can not access data directly in database
+   user -->DBMS-->database
+
+Type of Database
+=================
+There are 2 type of database
+1.Relational Database -->Data store in table formate (inside Relational Database we will use mysql,sql server,orcal sql etc)
+2.Non-Relational Database(NoSql) -->it will not understand sql(inside non relational database we will use mongodb)
+
+
+SQL
+======
+SQL stands for Structure Query Language
+it is used to intract with Relational database
+it is used to perform CRUD operation
+C-create
+R-read
+U-update
+D-delete
+
+Table
+=======
+combination to row and column is known as table.
+
+how we create database
+=========================
+firstly we create 
+     DATABASE(1.create database inside database 2. we create Table)  
+         |
+       TABLE(2.create table inside database)
+         | 
+    INSERT VALUE(3.then insert value on this Table)
+
+Create Database
+==================
+create database db_name;(syntax to create database)
+drop database db_name;(syntax to delete database)
+use db_name;(Syntax to use database )(it mean whatever database you want to use just type USE Db_NAME and select that database work)
+
+Create Table
+===============
+create table tb_name;
+insert into tb_name value;
+
+
