@@ -1,0 +1,14 @@
+
+
+public class Main
+{
+	public static void main(String[] args) {
+	    int n=4;
+	    int m=8;
+	    n=n+m;//12
+	    m=n-m;//4
+	    n=n-m;//8
+	    System.out.println(n+" "+m);
+	    
+	}
+}
