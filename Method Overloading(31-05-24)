@@ -1,0 +1,24 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	  Abc a=new Abc();
+	  a.sum(6,1.2f);
+	}}
+	class Abc{
+	    void sum(){
+	        System.out.println("Empty");
+	    }
+	    void sum(int n){
+	     System.out.println(n);
+	    }
+	    void sum(int n,int n1){
+	       System.out.println(n+n1);
+	    }
+	    void sum(int n,float n1){
+	    System.out.println(n+n1);
+	    }
+	    void sum(float n,double n1){
+	  System.out.println(n);
+	    }
+	}
