@@ -1,0 +1,35 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Map<Character,Integer>map=new HashMap<>();
+	    Map<Character,Integer>m1=new HashMap<>();
+	    m1.put('a',2);
+	    m1.put('b',8);
+	    m1.put('s',3);
+	    m1.put('e',1);
+	     Map<Character,Integer>m2=new HashMap<>();
+	    m2.put('a',3);
+	    m2.put('t',6);
+	    m2.put('r',3);
+	    m2.put('e',9);
+	    List<Map<Character,Integer>>l=new ArrayList<>();
+	    l.add(m1);
+	    l.add(m2);
+	    for(int i=0;i<l.size();i++){
+	        Map<Character,Integer> x=l.get(i);
+	        for(Map.Entry<Character,Integer>it:x.entrySet()){
+	            char c=it.getKey();
+	            if(m2.containsKey(c)){
+	                int m=m2.get(c);
+	                int n=m1.get(c);
+	              int  sum=m+n;
+	                map.put(c,sum);
+	                
+	            }
+	        }
+	    
+	    System.out.println(map);
+	    } 
+	}
+}
