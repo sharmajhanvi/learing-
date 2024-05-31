@@ -1,0 +1,23 @@
+import java.util.*;
+public class Main{
+	public static void main(String[] args) {
+	   String s="JAnvisharma";
+	   String s1=s.toLowerCase();
+	   Map<Character ,Integer>m1=new HashMap<>();
+	   for(int i=0;i<s1.length();i++){
+	       char ele=s1.charAt(i);
+	       if(m1.containsKey(ele)){
+	           int val=m1.get(ele);
+	           m1.put(ele,val+1);
+	       }
+	       else{
+	           m1.put(ele,1);
+	       }
+	   }
+	   for(Map.Entry<Character,Integer>it:m1.entrySet()){
+	       char x=it.getKey();
+	       int y=it.getValue();
+	       System.out.println(x+" "+y);
+	   }
+    }
+}
