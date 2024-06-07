@@ -1,0 +1,21 @@
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Father f=new Son();//upcasting
+	    Son s=(Son) f;//Downcasting
+	    s.bike();
+	    s.car();
+
+	}
+}
+class Father{
+void car(){
+    System.out.println("farther has one car");
+}
+}
+class Son extends Father{
+    void bike(){
+        System.out.println("son has one bike");
+    }
+}
