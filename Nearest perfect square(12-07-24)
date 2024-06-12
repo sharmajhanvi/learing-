@@ -1,0 +1,12 @@
+public class Main
+{
+   public static void main(String[]args){
+    int n=11;
+   int perfectsquare=0;
+    for(int i=1;i<=n;i++){
+         if(i*i<=n){
+        perfectsquare=i;
+        }
+        }
+        System.out.println(perfectsquare);
+}}
