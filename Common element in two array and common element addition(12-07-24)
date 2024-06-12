@@ -1,0 +1,35 @@
+This is find to Common element in two array
+=============================================
+public class Main
+{
+   public static void main(String[]args){
+    int arr[]={2,6,8,9,4,5};
+    int arr1[]={4,6,5,1,3,7};
+   
+    for(int i=0;i<arr.length;i++){
+        for(int j=0;j<arr1.length;j++){
+        if(arr[i]==arr1[j]){
+      System.out.println(arr[i]);
+	}
+            
+        }}
+}}
+
+
+This is addation of common element in two array
+===============================================
+public class Main
+{
+   public static void main(String[]args){
+    int arr[]={2,6,8,9,4,5};
+    int arr1[]={4,6,5,1,3,7};
+   int ans=0;
+    for(int i=0;i<arr.length;i++){
+        for(int j=0;j<arr1.length;j++){
+        if(arr[i]==arr1[j]){
+            ans=ans+arr[i];
+        }
+        }}
+      System.out.println(ans);
+
+}}
