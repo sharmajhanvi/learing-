@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	String s="i am jahanvi sharma";
+	String s1[]=s.split(" ");
+	Map<String,Integer>m1=new HashMap<>();
+	for(int i=0;i<s1.length;i++){
+	String c=s1[i];
+	if(m1.containsKey(c)){
+	    int val=m1.get(c);
+	    m1.put(c,val+1);
+	}
+	else{
+	    m1.put(c,1);
+	}
+	    
+	}
+	for(Map.Entry<String,Integer>it:m1.entrySet()){
+	    String a=it.getKey();
+	    int b=it.getValue();
+	    System.out.println(a+" "+b);
+	}
+	}
+}
