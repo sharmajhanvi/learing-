@@ -1,0 +1,54 @@
+Abstraction 
+===============
+Hiding the internal implementation  of deatils for another program is known as abstraction.
+it show functionality of the object, do not show the internal implementation of the object functionality.
+
+how to achieve Abstraction
+----------------------------
+1.by using interface class.
+2.by using abstract calss.
+
+
+benifits of abstraction
+-------------------------
+1.we can write loose couple program
+2.we can build API's.
+3.we can achieve standarlization
+
+
+program to understand abstraction
+===================================
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		Car c=new Car();
+		c.start();
+		Bike b=new Bike();
+		b.start();
+		Cycle c1=new Cycle();
+		c1.start();
+	}
+}
+
+
+
+abstract class Vehcle{
+    abstract void start();
+}
+class Car extends Vehcle{
+    void start(){
+        System.out.println("Car start  with key");
+    }
+}
+class Bike extends Vehcle{
+    void start(){
+        System.out.println("bike start  with kick");
+    }
+}
+class Cycle extends Vehcle{
+    void start(){
+        System.out.println("Cycle start  with panddle");
+    }
+}
+ 
