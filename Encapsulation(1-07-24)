@@ -1,0 +1,61 @@
+Encapsulation
+===============
+->Binding the data and its operation of an entity is known as encapsulation
+*.jar file is a encapsulation of package
+*.package is a encapsulation of classes
+*.classes is a encapsulation of varable and method
+
+
+real time of encapsulation
+---------------------------
+java bean file
+*.class  must be public 
+*.class member must be private
+*.custractor must be public
+*.public getter and setter
+
+program to understand encapsulation
+-------------------------------------
+import java.util.*;
+public class Main{
+    public static void main(String[] args) {
+       Student s=new Student();
+       s.setId(101);
+       s.setName("janvi");
+       s.setAddress("hsr");
+       System.out.println(s.getId()+" "+s.getName()+" "+s.getAddress());
+        
+    }
+}
+class Student{
+ private int id;
+   private String name;
+   private String address;
+   Student(){
+       
+   }
+  public  Student(int id,String name,String address){
+      this.id=id;
+      this.name=name;
+      this.address=address;
+  }
+  public int getId(){
+      return id;
+  }
+  public void setId(int id){
+      this.id=id;
+  }
+  public String getName(){
+      return name;
+  }
+  public void setName(String name){
+      this.name=name;
+  }
+  public String  getAddress(){
+      return address;
+  }
+  public void setAddress(String address){
+      this.address=address;
+  }
+    
+}
