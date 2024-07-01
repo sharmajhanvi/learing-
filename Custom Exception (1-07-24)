@@ -1,0 +1,26 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args) {
+  int age=20;
+  try{
+      if(age<=18){
+          throw new Underageexecption("you can not vote");
+      }
+      else {
+          System.out.println("you can vote");
+      }
+  }
+  catch(Exception e){
+      e.printStackTrace();
+  }
+	}
+}
+class Underageexecption extends Exception{
+    Underageexecption(){
+       super("you are unsder age");
+    }
+    Underageexecption(String message){
+        super(message);
+    }
+    
+}
