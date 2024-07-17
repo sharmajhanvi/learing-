@@ -1,0 +1,78 @@
+STUDENT CLASS 
+=================
+import java.io.Serializable;
+
+public class Employee implements Serializable {
+	int id;
+	String name;
+	Employee(int id,String name){
+		this.id=id;
+		this.name=name;
+	}
+	public void setId(int id) {
+		this.id=id;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setName(String name) {
+		this.name=name;
+	}
+	public String getName() {
+		return name;
+	}
+
+}
+
+
+MAIN CLASS OF SERIALIZATION
+=============================
+
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+
+public class EmployeeSerialization {
+
+	public static void main(String[] args) {
+		Employee e1=new Employee(101,"abc");
+		try {
+		FileOutputStream f1=new FileOutputStream("/Users/apple/Desktop/Employee.txt");
+		ObjectOutputStream ob=new ObjectOutputStream(f1);
+		ob.writeObject(e1);
+		f1.close();
+		ob.close();
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+		System.out.println("serilization done");
+	}
+
+}
+
+MAIN CLASS OF DESERIALIZATION
+==================================
+import java.io.FileInputStream;
+import java.io.ObjectInputStream;
+
+public class EmployeeDeserialization {
+
+	public static void main(String[] args) {
+		try {
+		
+		FileInputStream f2=new FileInputStream("/Users/apple/Desktop/Employee.txt");
+		ObjectInputStream ob2=new ObjectInputStream(f2);
+		Employee em=(Employee)ob2.readObject();
+		f2.close();
+		ob2.close();
+		System.out.println(em.getId()+" "+em.getName());
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		System.out.println("Deserialization done");
+	}
+
+}
+
+
