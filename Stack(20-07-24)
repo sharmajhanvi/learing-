@@ -1,0 +1,32 @@
+Stack
+=========
+->it store and proccessing data LIFO order.
+->we accesss element both side top and bottom
+stack have mainly three method 
+--------------------------------
+puse(),(add)->it is used to add the element
+poll()->it is used to remove the element
+peek()->it will return top element it your stack
+
+
+program to understand Stack
+-----------------------------
+import java.util.*;
+public class Main
+{
+    public static void main(String[] args) {
+	Stack <Integer> s=new Stack<>();
+	s.push(65);
+	s.add(88);
+	s.add(14);
+	s.add(10);
+	s.add(12);
+	int n=s.size();
+	System.out.println(n);
+	boolean b=s.isEmpty();
+	System.out.println(b);
+      s.pop();
+	System.out.println(n1);
+	
+    }
+}
