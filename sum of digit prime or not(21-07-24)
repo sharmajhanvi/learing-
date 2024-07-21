@@ -1,0 +1,60 @@
+Without function
+==================
+public class Main
+{
+    public static void main(String[] args) {
+   int n=23462;
+   int rem=0;
+   int sum=0;
+   while(n!=0){
+       rem=n%10;
+       sum=sum+rem;
+       n=n/10;
+   }
+   System.out.println(sum);
+   if(sum<=1){
+       System.out.println("not prime");
+   }
+    boolean flag=true;
+   for(int i=2;i<sum;i++){
+         if(sum%i==0){
+           flag=false;
+           break;
+           }
+   }
+   if(flag==true){
+       System.out.println("prime");
+   }
+   else{
+       System.out.println("not prime");
+   }
+    }
+}
+
+Inside function
+======================
+public class Main
+{
+   static boolean sumofdigitisprime(int n){
+      int sumofdigit=0;
+      while(n!=0){
+          int rem=n%10;
+          sumofdigit=sumofdigit+rem;
+          n=n/10;
+      }
+      for(int i=2;i<sumofdigit;i++){
+          if(sumofdigit==2){
+              return true;
+          }
+          if(sumofdigit%i==0){
+              return false;
+          }
+      }
+      return true;
+   }
+    public static void main(String[] args){
+      String s="35461";  
+     int b=Integer.parseInt(s);
+     System.out.println(sumofdigitisprime(b));
+    }
+}
