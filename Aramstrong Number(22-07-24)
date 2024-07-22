@@ -1,0 +1,38 @@
+
+public class Main
+{
+    static int count(int n){
+        int c=0;
+        while(n!=0){
+            n=n/10;
+            c++;
+        }
+        return c;
+    }
+        static int power(int base,int exponent){
+            int pow=1;
+            for(int i=1;i<=exponent;i++){
+                pow=pow*base;
+            }
+            return pow;
+        }
+    
+	public static void main(String[] args) {
+	    int n=1553;
+	    int n1=n;
+	    int exp=count(n1);
+	    int sum=0;
+	    int rem=0;
+	    while(n!=0){
+	        rem=n%10;
+	        sum=sum+power(rem,exp);
+	        n=n/10;
+	    }
+	    if(n1==sum){
+	        System.out.println("Aramstrong Number");
+	    }
+	    else{
+	        System.out.println("Not Aramstrong Number");
+	    }
+	}
+}
